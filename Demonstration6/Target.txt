@@ -1,0 +1,6 @@
+1. Creating an interface.
+2. Some properties of interface.
+3. interface and single inheritance.
+4. Interface and multiple inheritance.
+5. Runtime polymorphism with interface.
+6. Interface versus abstract class.
