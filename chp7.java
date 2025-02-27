@@ -1,14 +1,16 @@
 // Exception handling
+import java.io.DataInputStream;
 import java.lang.*;
+
 // 1. Errors in Java
 // i. Compile time error    ii. Run time error
 
 // 2. Errors and Exception in Java
 
             //          Throwable
-
+                //    /                  \        
             // Error                     Exception
-
+                                    //   /              \
             //                   IO Exception            Runtime Exception
 
 
@@ -173,6 +175,7 @@ import java.lang.*;
         
 //         String greeting[] = {"Hello World!", "Hello Java!", "Hello World!"};
 //         while (i<4) {
+
 //             try{
 //                 System.out.println(greeting[i++]);
 //             }
@@ -215,7 +218,7 @@ import java.lang.*;
 // }
 
 
-// throws in try-catch
+// 5. throws in try-catch
 
 // Syntax :
 
@@ -225,3 +228,197 @@ import java.lang.*;
 
 // exception-list = comma-separated list of the exceptions that a method can throw
 
+
+// Example
+// import java.io.DataInputStream;
+
+// public class chp7 {
+
+//     public static void main(String[] args) throws Exception {
+//          double principleAmount = 0.0;
+//          double rateOfInterest = 0.0;
+//          int numberOfYears = 0;
+
+//          try{
+//             DataInputStream in = new DataInputStream(System.in);
+//             String tempString;
+
+//             // Principal Amount
+//             System.out.println("Enter Principal Amount: ");
+//             System.out.flush();
+//             tempString = in.readLine();
+//             principleAmount = Float.valueOf(tempString);
+
+//             // rateOfInterest
+//             System.out.println("Enter Rate of Interest: ");
+//             System.out.flush();
+//             tempString = in.readLine();
+//             rateOfInterest = Float.valueOf(tempString);
+
+//             // Number of Years
+//             System.out.println("Enter Number of Years: ");
+//             System.out.flush();
+//             tempString = in.readLine();
+//             numberOfYears = Integer.parseInt(tempString);
+            
+//             // Total interest
+//             double interestTotal = principleAmount*rateOfInterest*numberOfYears;
+//             System.out.println("Total interest = " + interestTotal);
+//          }
+//          catch(Exception e){
+//             System.out.println(e);          // Detailed -- java.lang.NumberFormatException: empty String
+//          }
+//     }
+// }
+
+
+// * Nested try-catch 
+
+// public class chp7 {
+    
+//     public void printStackTrace() {};
+//     public static void main(String[] args){
+//         try{
+//             // catch divide-by-zero
+//             int a = args.length;
+//             int b = 34/a;
+
+//             // divide-by-zero exception
+//             System.out.println("a = " + a);
+
+//             if(a==1){
+//                 a = a/(a-a);
+//             }
+
+//             // another divide-by-zero exception
+//             try{
+//                 if(a==2){ 
+//                     int c[] = {1};
+//                     c[a] = 99;
+//                 }
+                
+//             }
+//             catch(ArrayIndexOutOfBoundsException e){
+//                 System.out.println("Array index out-of-bounds: \n " + e);
+//             }
+//         }
+//         catch(ArithmeticException e){
+
+            // Exception methods
+
+            //  System.out.println("Divide by 0: " + e.getMessage());     // Divide by 0: / by zero
+            //  System.out.println("Divide by 0: " + e.getCause());          // Divide by 0: null
+            //  System.out.println("Divide by 0: " + e.toString());          // C:\Users\rohit\Java Journey\chp7.java
+         
+//         }
+//     }
+// }
+
+
+// * Exception classes in Java.lang.Throwable
+        
+        //                    object
+        //                       |
+        //                   Throwable
+        // Error                                    Exception
+        //                                                       RuntimeException
+
+
+// * Own Exception
+import java.io.*;
+
+// InsufficientFundsException
+// class InsufficientFundsException extends Exception {
+//     private double amount;
+//     public InsufficientFundsException(double amount){
+//         this.amount = amount;
+//     }
+
+//     public double getAmount(){
+//         return amount;
+//     }
+// }
+
+// CheckingAccount
+
+// class CheckingAccount {
+//     private double balance;
+//     private int number;
+//     public CheckingAccount(int number){
+//         this.number = number;
+//     }
+
+//     public void deposit(double amount){
+//         balance += amount;
+//     }
+
+//     public void withdraw(double amount) throws InsufficientFundsException {
+//         if(amount <= balance){
+//             balance -= amount;
+//         }
+//         else {
+//             double needs = amount - balance;
+//             throw new InsufficientFundsException(needs);
+//         }
+//     }
+
+//     public double getBalance() {
+//         return balance;
+//     }
+
+//     public int getNumber(){
+//         return number;
+//     }
+// }
+
+
+// Main class
+// public class chp7 {
+
+//     public static void main(String[] args){
+//         CheckingAccount c = new CheckingAccount(101);
+
+//         System.out.println("Depositing $500");
+//         c.deposit(500.0);
+
+//         try{
+//             System.out.println("\nWithdrawing $100");
+//             c.withdraw(100);
+//             System.out.println("Withdrawing $600");
+//             c.withdraw(600);
+//         }
+//         catch(InsufficientFundsException e){
+//             System.out.println("Sorry, but you are short $ " + e.getMessage());
+//             e.printStackTrace();
+//         }
+//     } 
+// }
+
+
+// * Program with Scanner and array
+import java.util.*;
+
+public class chp7 {
+ 
+     public static void main(String[] args){
+        int sum = 0;
+        float avg = 0;
+        
+        ArrayList <Integer> l = new ArrayList<Integer>();
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the Input: ");
+        while (input.hasNextInt()) {
+            l.add(input.nextInt());
+        }
+
+        for(int i=0; i<l.size(); i++){
+            sum = sum + l.get(i);
+        }
+        
+        avg = sum /l.size();
+        System.out.println("Average : " + avg);
+     }
+};
+
+// Enter Ctrl+Z to stop scanning

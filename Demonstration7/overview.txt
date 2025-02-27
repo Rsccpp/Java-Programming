@@ -1,0 +1,12 @@
+OverView : 
+
+1. About compile-time error
+2. About runt-time error
+3. Simple try-catch block
+4. Try with multiple catch
+5. Multiple errors with single catch
+6. Finally in try-catch block
+7. Exception handling using Throws statement
+8. Nested try-catch block
+
+***** All this topic discussed in chp7.java file *****
