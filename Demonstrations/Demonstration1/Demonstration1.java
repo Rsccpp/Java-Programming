@@ -1,7 +1,7 @@
-package Demonstration1;
+package Demonstrations.Demonstration1;
 // Demonstration1 Overview :
 
-import Nptel.A;
+// import A;
 
 class A {
     A() {
