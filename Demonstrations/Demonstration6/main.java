@@ -1,4 +1,4 @@
-package Demonstration6;
+package Demonstrations.Demonstration6;
 // import Demonstration6.myInterface.anInterface;
 
 //1.  A class that implement Interface

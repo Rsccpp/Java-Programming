@@ -22,7 +22,7 @@
 
 
 // Accessing of members when it is not imported explicitly
-package Demonstration5;
+package Demonstrations.Demonstration5;
 
 public class builtInApi {
 

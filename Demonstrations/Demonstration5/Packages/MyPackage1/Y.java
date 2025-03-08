@@ -1,5 +1,5 @@
-package Demonstration5.Packages.MyPackage1;
-import Demonstration5.Packages.MyPackage1.*;;
+package Demonstrations.Demonstration5.Packages.MyPackage1;
+import Demonstrations.Demonstration5.Packages.MyPackage1.*;;
 
 public class Y extends X {
     Y(){
