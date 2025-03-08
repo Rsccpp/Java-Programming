@@ -1,4 +1,4 @@
-package Packages.MyPackage2;
+package Nptel.Packages.MyPackage2;
 
 public class Demo2 {
     public static void main(String[] args){

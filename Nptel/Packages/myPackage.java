@@ -1,4 +1,4 @@
-package Packages;
+package Nptel.Packages;
 
 public class myPackage {
      void test(){

@@ -1,4 +1,4 @@
-package Packages.MyPackage1;
+package Nptel.Packages.MyPackage1;
 
 public class X {
      int n = 1;

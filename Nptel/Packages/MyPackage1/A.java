@@ -1,4 +1,4 @@
-package Packages.MyPackage1;
+package Nptel.Packages.MyPackage1;
 
 class A {              // class with default protection
     A(){

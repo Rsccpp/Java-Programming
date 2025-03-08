@@ -1,6 +1,6 @@
-package Packages.MyPackage2;
+package Nptel.Packages.MyPackage2;
 
-public class Z extends Demonstration5.Packages.MyPackage1.X {
+public class Z extends Demonstrations.Demonstration5.Packages.MyPackage1.X {
     Z(){
         System.out.println("I am constructor from class Z: ");
         // System.out.println("n from Z " + n);        // Error  -- Default not accessible outside its package
