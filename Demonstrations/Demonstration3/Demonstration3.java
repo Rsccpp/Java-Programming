@@ -1,4 +1,4 @@
-package Demonstration3;
+package Demonstrations.Demonstration3;
 // Demonstration :
 
 // 1. Program to demonstrate loop control using

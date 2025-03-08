@@ -1,4 +1,4 @@
-package Demonstration2;
+package Demonstrations.Demonstration2;
 // Demonstration: 
 // 1. Use of print(), printf(), println()
 // 2. Command line input in Java (chp4)

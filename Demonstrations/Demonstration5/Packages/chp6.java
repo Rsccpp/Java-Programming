@@ -1,4 +1,4 @@
-package Demonstration5.Packages;
+package Demonstrations.Demonstration5.Packages;
 // Two unique features in Java
 // 1. Packages
 // 2. Interfaces

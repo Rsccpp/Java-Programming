@@ -1,4 +1,5 @@
-// Multithreading / multiprocessing
+package Chapters;
+// Multithreading / Multiprocessing
 
 // A multithread program 
     //                 Main thread
@@ -74,34 +75,37 @@
 
 // 2. Example -- Runnable interface
 
-class ThreadA implements Runnable {
-    public void run(){
-        for(int i=0; i<=5; i++){
-            System.out.println("From ThreadA with i = " + i);
-        }
-        System.out.println("Exiting from Thread A ....");
-    }
-}
+// class ThreadA implements Runnable {
+//     public void run(){
+//         for(int i=0; i<=5; i++){
+//             System.out.println("From ThreadA with i = " + i);
+//         }
+//         System.out.println("Exiting from Thread A ....");
+//     }
+// }
 
-class ThreadB implements Runnable {
-    public void run(){
-        for(int j=0; j<=5; j++){
-            System.out.println("From ThreadA with j = " + 2*j);
-        }
-        System.out.println("Exiting from Thread B ....");
-    }
-}
+// class ThreadB implements Runnable {
+//     public void run(){
+//         for(int j=0; j<=5; j++){
+//             System.out.println("From ThreadA with j = " + 2*j);
+//         }
+//         System.out.println("Exiting from Thread B ....");
+//     }
+// }
 
-public class chp8 {
+// public class chp8 {
 
-    public static void main(String[] args){
-        ThreadA a = new ThreadA();
-        ThreadB b = new ThreadB();
+//     public static void main(String[] args){
+//         ThreadA a = new ThreadA();
+//         ThreadB b = new ThreadB();
 
-        Thread t1 = new Thread(a);
-        Thread t2 = new Thread(b);
+//         Thread t1 = new Thread(a);
+//         Thread t2 = new Thread(b);
 
-        t1.start();
-        t2.start();
-    }
-}
+//         t1.start();
+//         t2.start();
+//     }
+// }
+
+
+// 

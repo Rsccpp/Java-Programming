@@ -9,7 +9,7 @@
 
 // 1. Example of default access modifier.
 
-package Demonstration4;
+package Demonstrations.Demonstration4;
 
 class A {
     void msg() {

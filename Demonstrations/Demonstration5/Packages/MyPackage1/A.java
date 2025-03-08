@@ -1,4 +1,4 @@
-package Demonstration5.Packages.MyPackage1;
+package Demonstrations.Demonstration5.Packages.MyPackage1;
 
 class A {              // class with default protection
     A(){

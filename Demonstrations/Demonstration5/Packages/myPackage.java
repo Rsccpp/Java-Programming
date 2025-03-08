@@ -1,4 +1,4 @@
-package Demonstration5.Packages;
+package Demonstrations.Demonstration5.Packages;
 
 public class myPackage {
      void test(){

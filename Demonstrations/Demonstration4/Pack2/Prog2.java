@@ -1,4 +1,4 @@
-package Demonstration4.Pack2;
+package Demonstrations.Demonstration4.Pack2;
 
 // Default access modifier
 

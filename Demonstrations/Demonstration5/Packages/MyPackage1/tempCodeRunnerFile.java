@@ -1,1 +1,1 @@
-package Demonstration5.Packages.MyPackage1;
+package Demonstrations.Demonstration5.Packages.MyPackage1;

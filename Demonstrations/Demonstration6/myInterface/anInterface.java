@@ -1,4 +1,4 @@
-package Demonstration6.myInterface;
+package Demonstrations.Demonstration6.myInterface;
 
 
 // 1. Creating an interface and using the name in a Java program 
