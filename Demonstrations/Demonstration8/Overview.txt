@@ -1,0 +1,8 @@
+In today's demonstration
+
+1. Creating threads using the Thread class.
+2. Creating threads implementing the Runnable interface.
+3. Using the thread methods.
+4. Demonstrating thred's stated and inter process communication.
+5. A real world example of multithreading : Banking transaction.
+6. The same with thread synchronization
