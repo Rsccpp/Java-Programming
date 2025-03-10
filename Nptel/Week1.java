@@ -1,12 +1,6 @@
 package Nptel;
 import java.util.*;
 
-
-
-
-
-
-
 // Programming Question 3  -- Multiplication table of a given number upto 5
 // public class Week1 {
 //      public static void main(String[] args) {
