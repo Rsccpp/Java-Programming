@@ -95,3 +95,68 @@ import java.io.*;
 // boolean isFile()
 // boolean isDirectory()
 // boolean isAbsolute()
+
+// ** Getting file information
+// long lastModified()
+// long length()
+// boolean delete()
+
+// ** Directory utilities
+// boolean mkDir(File newDir)
+// boolean mkDir(File newDir)
+// String [] list()
+
+
+// Using Class File: An Example
+import java.io.File;
+
+// public class chp9 {
+    
+//     public static void getPaths (File f) throws IOException{
+//         System.out.println("Name :" + f.getName());
+//         System.out.println("Path : " + f.getPath());
+//         System.out.println("Parent : " + f.getParent());
+//     }
+
+//     public static void getInfo (File f) throws IOException{
+//                if(f != null) {
+//                 System.out.println("File exists");
+//                 System.out.println(f.canRead() ? " and is readable" : "");
+//                 System.out.println(f.canWrite() ? " and is writable" : "");
+//                 System.out.println("File is last modified : " + f.lastModified());
+//                 System.out.println("File is " + f.length() + "bytes long");
+//                }
+//                else 
+//                  System.err.println(" File does not exist.");
+//     }
+//     public static void main(String[] args){
+//         File fileToCheck;
+
+//         if(args.length > 0){
+//               for(int i=0; i<args.length; i++){
+//                 fileToCheck = new File(args[i]);
+//                 getPaths(fileToCheck);
+//                 getInfo(fileToCheck);
+//               }
+//         }
+//         else 
+//           System.out.println("Usage: Java file test <filename>");
+//     }
+// }
+
+
+// Example: class FileInputStream
+
+public class chp9 {
+
+    public static void main(String[] args){
+        int size;
+
+        // To open a file stream
+        FileInputStream fin;
+        fin = new FileInputStream(" C:\WINDOWS\SYSTEM\SYSTEM.INI ");
+        size = fin.available();
+
+        // returns the number of bytes available
+    }
+}
