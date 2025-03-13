@@ -1,0 +1,10 @@
+Overview : 
+
+1. How to create, open and close a file.
+2. Use of DataInputStream class to read from a file.
+3. Use of DataOutputStream to write into a file.
+4. Use of CharacterStream classes to read and write into files.
+5. File handling in Java.
+6. Example of BufferedOutputStream class.
+7. Example of Java BufferedInputStream.
+8. Example of Java SequenceInputStream.

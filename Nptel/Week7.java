@@ -140,15 +140,16 @@ package Nptel;
 // o/p : j
 
 // Qno. 10 What will be the output of the following code
-import java.io.File;
-public class Week7 {
+// import java.io.File;
+// public class Week7 {
 
-    public static void main(String[] args) {
-        String filePath = "file.txt";
+//     public static void main(String[] args) {
+//         String filePath = "file.txt";
 
-        File file = new File(filePath);
-        long fileSize = file.length();
+//         File file = new File(filePath);
+//         long fileSize = file.length();
 
-        System.out.println(fileSize);
-    }
-}
+//         System.out.println(fileSize);
+//     }
+// }
+// // o/p : 42
