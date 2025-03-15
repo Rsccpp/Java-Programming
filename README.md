@@ -1,2 +1,2 @@
 # Java-Programming
-It contains all my works during Java Journey.
+It contains all works during Java Learning.
