@@ -1,4 +1,4 @@
-package Chapters;
+
              
 // Applet Programming
 
@@ -29,7 +29,7 @@ import java.awt.*;
 
 
 // Example 3
-public class chp10 extends Applet {
+public class Pg1  extends Applet {
     int x, y, w, h;
     public void init(){
         x = Integer.parseInt(getParameter("xValue"));
@@ -42,5 +42,6 @@ public class chp10 extends Applet {
         g.drawRect(x, y, w, h);
     }
 
-    public static void main(String[] args){}
+    
 }
+
