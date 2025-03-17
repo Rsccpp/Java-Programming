@@ -2,7 +2,7 @@ package AWT;
 
 import java.awt.*;
 
-
+// Creating a Frame
 public class Program1 {
     public static void main(String[] args) {
         Frame frame = new Frame("Frame in Java");
