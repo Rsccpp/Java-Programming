@@ -1,0 +1,7 @@
+public class Applet extends Panel
+
+java.lang.Object
+          java.awt.Componet
+                 java.awt.Container
+                        java.awt.Panel 
+                               java.applet.Applet

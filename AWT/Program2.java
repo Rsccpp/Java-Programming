@@ -2,7 +2,6 @@ package AWT;
 
 import java.awt.Color;
 import java.awt.Frame;
-import java.awt.Label;
 import java.awt.Panel;
 
 // Creating a Panel
@@ -14,7 +13,7 @@ public class Program2 {
         f.setBackground(Color.BLACK);
         f.setLayout(null);
 
-        p.setSize(100, 100);
+        p.setSize(150, 150);
         p.setBackground(Color.RED);
         f.add(p);
         f.setVisible(true);
