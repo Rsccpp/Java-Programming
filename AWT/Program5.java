@@ -1,49 +1,98 @@
 package AWT;
 
 import java.awt.*;
-import java.awt.event.*;
+
+
+// Layout Managers
+
+// There are five predefined layout manager classes:
+// 1. FlowLayout
+// 2. BorderLayout
+// 3. GridLayout
+// 4. GridBagLayout
+// 5. CardLayout
+
+
+// 1. FlowLayout Manager
+// Used to arrange the components in a line, one after another
+
+// public class Program5 {
+
+//     public static void main(String[] args) {
+        // Frame f = new Frame("FlowLayout Example");
+        // Button b1, b2, b3, b4, b5;
+
+        // b1 = new Button("1");
+        // b2 = new Button("2");
+        // b3 = new Button("3");
+        // b4 = new Button("4");
+        // b5 = new Button("5");
+
+        // f.add(b1); f.add(b2); f.add(b3); f.add(b4); f.add(b5);
+
+        // f.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        // f.setSize(500, 500);
+        // f.setVisible(true);
+//     }
+// }
+
+
+// 2. BorderLayout Manager
+// BorderLayout manager is used to arrange components in a particular manner -- East, West, North, South, and Center
+
+// public class Program5 {
+
+//     public static void main(String[] args) {
+//         Frame f = new Frame("FlowLayout Example");
+//         Button b1, b2, b3, b4, b5;
+
+//         b1 = new Button("NORTH");
+//         b2 = new Button("SOUTH");
+//         b3 = new Button("EAST");
+//         b4 = new Button("WEST");
+//         b5 = new Button("CENTER");
+
+//         f.add(b1, BorderLayout.NORTH);
+//         f.add(b2, BorderLayout.SOUTH);
+//         f.add(b3, BorderLayout.EAST);
+//         f.add(b4, BorderLayout.WEST);
+//         f.add(b5, BorderLayout.CENTER);
+
+
+//         f.setSize(500, 500);
+//         f.setVisible(true);
+//     }
+// }
+
+
+
+// GridLayout Manager
+// Used to arrange the components in rectangular grid. [In Matrix]
 
 public class Program5 {
 
-    public Program5() {
-        Frame f = new Frame("CardLayout Example");
-        CardLayout c = new CardLayout();
-        f.setLayout(c); // Set the layout to CardLayout
-
-        // Add buttons to the CardLayout
-        f.add("1", new Button("Card1"));
-        f.add("2", new Button("Card2"));
-        f.add("3", new Button("Card3"));
-        f.add("4", new Button("Card4"));
-        f.add("5", new Button("Card5"));
-
-        // Set the size of the frame
-        f.setSize(400, 300);
-
-        // Add a WindowListener to close the frame
-        f.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                f.dispose();
-            }
-        });
-
-        // Add a KeyListener to navigate cards using arrow keys
-        f.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-                    c.next(f); // Show the next card
-                } else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-                    c.previous(f); // Show the previous card
-                }
-            }
-        });
-
-        f.setVisible(true); // Make the frame visible
-    }
-
     public static void main(String[] args) {
-        new Program5();
+        Frame f = new Frame("FlowLayout Example");
+        Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b10;
+        GridLayout g = new GridLayout(2, 5);
+
+        b1 = new Button("1");
+        b2 = new Button("2");
+        b3 = new Button("3");
+        b4 = new Button("4");
+        b5 = new Button("5");
+        b6 = new Button("6");
+        b7 = new Button("7");
+        b8 = new Button("8");
+        b9 = new Button("9");
+        b10 = new Button("10");
+
+
+        f.add(b1); f.add(b2); f.add(b3); f.add(b4); f.add(b5);
+        f.add(b6); f.add(b7); f.add(b8); f.add(b9); f.add(b10);
+
+        f.setLayout(g);
+        f.setSize(500, 500);
+        f.setVisible(true);
     }
 }
