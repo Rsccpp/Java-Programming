@@ -1,0 +1,5 @@
+Event Handling : The concept
+
+* To add life to the components.
+* To handle user interactions.
+* Java GUI supports event-driven programming.
