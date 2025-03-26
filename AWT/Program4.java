@@ -26,13 +26,13 @@ import java.awt.*;
 // }
 
 
-// TextArea
+// TextField
 // Text component that allows editing of a single line text.
 
 // public class Program4 {
 
 //     public static void main(String[] args) {
-//         Frame f = new Frame("TextArea Example");
+//         Frame f = new Frame("TextField Example");
 //         TextArea t1, t2;
 
 //         t1 = new TextArea("First Name ");
@@ -134,10 +134,16 @@ import java.awt.*;
 
 //     public static void main(String[] args) {
 //         Frame f = new Frame("Scrollbar Example");
-//         Scrollbar s = new Scrollbar();
-
-//         s.setBounds(100, 100, 50, 100);
-//         f.add(s);
+//         // Horizontal
+//         Scrollbar h = new Scrollbar(Scrollbar.HORIZONTAL, 0, 20, 0, 100);
+//         h.setBounds(100, 100, 300, 50);
+        
+//         // Vertical
+//         Scrollbar v = new Scrollbar(Scrollbar.VERTICAL, 0, 20, 0, 100);
+//         v.setBounds(100, 200, 50, 300);
+         
+//         f.add(h);
+//         f.add(v);
 //         f.setSize(500, 500);
 //         f.setLayout(null);
 //         f.setVisible(true);

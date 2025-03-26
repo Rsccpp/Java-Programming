@@ -1,0 +1,17 @@
+Overview:
+
+1. Applet program vs GUI Application
+   * Applet data entry
+   * Non-applet data entry
+2. AWT container components
+   * Frame
+   * Panel
+3. AWT basics components
+   * Button       * TextField     * List
+   * Label        * Checkbox      * Choice
+   * Radio Button * TextArea      * Scrollbar
+
+4. Layouts for AWT
+   * Border  * Card   * Flow   * Grid
+
+***** Check AWT folder ****
