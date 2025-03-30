@@ -1,0 +1,25 @@
+********** Java Swing ***********
+-- It is a part of JFC(Java Foundation Classes)
+-- It is used to create GUI components
+-- It is a part of Java Standard Edition
+-- It is used to create desktop & web applications
+-- It is lightweight components than AWT
+-- Package javax.swing
+
+
+*** AWT vs Swing ***
+Java AWT                                                    Java Swing
+1. Awt components are platform dependent.           1. Swing components are platform independent.
+2. Awt is heavy weight.                             2. Swing is lightweight.
+3. Awt doesn't support pluggable look and feel.     3. Swing supports pluggable look and feel.
+4. Awt is not thread safe.                          4. Swing is thread safe.
+5. Awt provides less components than Swing.         5. Swing provides more components than AWT.
+6. Awt doesn't follows MVC(Model View Controller)   6. Swing follows MVC(Model View Controller)
+   where model represent data, view represent
+   presentation and Controller act as an 
+   interface between model and view.
+
+
+** Two ways to create a frame
+1. By creating the object of Frame class(Association)
+2. By extending Frame class(Inheritance)
