@@ -10,7 +10,7 @@
 *** AWT vs Swing ***
 Java AWT                                                    Java Swing
 1. Awt components are platform dependent.           1. Swing components are platform independent.
-2. Awt is heavy weight.                             2. Swing is lightweight.
+2. Awt is heavy weight because it  rely on native system components. .                             2. Swing is lightweight because it does not rely on native system components. .
 3. Awt doesn't support pluggable look and feel.     3. Swing supports pluggable look and feel.
 4. Awt is not thread safe.                          4. Swing is thread safe.
 5. Awt provides less components than Swing.         5. Swing provides more components than AWT.
