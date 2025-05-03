@@ -30,6 +30,7 @@ public class jList extends JFrame {
         add(List1);
         add(List2);
         setSize(500, 500);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
         setVisible(true);
     }

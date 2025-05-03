@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 // Java JCheckBox
-// * Used to create a checkbox 
+// * Used to create a checkbox and choose multiple options
 // * Turn an option on or off
 // * It inherits from JToggleButton
 
@@ -25,6 +25,7 @@ public class jCheckBox extends JFrame {
         add(cb2);
         add(cb3);
         setSize(400, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
         setVisible(true);
     }

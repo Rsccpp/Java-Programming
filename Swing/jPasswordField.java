@@ -45,6 +45,7 @@ public class jPasswordField {
         f.add(text);
         f.setSize(300, 300);
         f.setLayout(null);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
 
         b.addActionListener(new ActionListener() {

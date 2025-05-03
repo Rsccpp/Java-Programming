@@ -1,5 +1,6 @@
 package AWT;
-import  java.awt.*;
+
+import java.awt.*;
 
 // Button
 
@@ -18,7 +19,7 @@ import  java.awt.*;
 //     public static void main(String[] args) {
 //         Program3 b = new Program3();
 //     }
-      
+
 // }
 
 // Way: 2
@@ -43,10 +44,8 @@ import  java.awt.*;
 //     }  
 // }
 
-
-
 // One more example
- // Create a html file
+// Create a html file
 // import  java.applet.Applet;
 // import  java.awt.*;
 // import javax.swing.plaf.basic.BasicBorders;
@@ -63,8 +62,6 @@ import  java.awt.*;
 //     }
 // }
 
-
-
 // ******** Checkbox ******** 
 
 // It is a graphical component that can be in either an "on"(true) or "off"(false) state.
@@ -74,19 +71,18 @@ import  java.awt.*;
 //     public Program3() {
 //         Frame f = new Frame("Checkbox Example");
 //         Checkbox checkbox1, checkbox2 , checkbox3, checkbox4;
-        
+
 //         System.out.println("Select languages: ");
 //         checkbox1 = new Checkbox("C++");
 //         checkbox2 = new Checkbox("Java", true);
 //         checkbox3 = new Checkbox("Python");
 //         checkbox4 = new Checkbox("JavaScript");
 
-        
 //         checkbox1.setBounds(100, 100, 50, 50);
 //         checkbox2.setBounds(100, 150, 50, 50);
 //         checkbox3.setBounds(100, 200, 50, 50);
 //         checkbox4.setBounds(100, 250, 50, 50);
-        
+
 //         f.add(checkbox1); f.add(checkbox2);
 //         f.add(checkbox3); f.add(checkbox4);
 //         f.setSize(500, 500);
@@ -99,10 +95,9 @@ import  java.awt.*;
 //     }  
 // }
 
-
 // Lists
 
-public class Program3 { 
+public class Program3 {
 
     // Constructor
     public Program3() {
@@ -113,7 +108,7 @@ public class Program3 {
         l.add("Item 2");
         l.add("Item 3");
         l.add("Item 4");
-        
+
         f.add(l);
         f.setSize(500, 500);
         f.setLayout(null);
@@ -122,5 +117,5 @@ public class Program3 {
 
     public static void main(String[] args) {
         new Program3();
-    }    
+    }
 }

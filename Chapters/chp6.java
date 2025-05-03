@@ -1,7 +1,6 @@
 package Chapters;
 // Interface
 
-
 // Concept of Abstract class
 // It is neccessary to implement abstract class methods in child class
 
@@ -46,7 +45,6 @@ package Chapters;
 //     }
 // }
 
-
 // // Main class
 // public class chp6 {
 
@@ -54,7 +52,7 @@ package Chapters;
 //         Geometry[] geometries = new Geometry[2];
 //         geometries[0] = new Circle(2.0);
 //         geometries[1] = new Rectangle(1.0,3.0 );   
-        
+
 //         //totalArea
 //         double totalArea = 0 ;
 //         for(int i=0; i < 2; i++){
@@ -63,7 +61,6 @@ package Chapters;
 //         System.out.println("Total area = " + totalArea);
 //     }
 // }
-
 
 // Multiple Inheritance -- Two base class and One derived class
 
@@ -157,11 +154,10 @@ package Chapters;
 //         geoItem = r;
 //         display(geoItem.area(), geoItem.perimeter());
 //     }
-    
+
 // }
 
-
-// Java most used Interfaces
+// --
 // 1. Iterator -- To run through a collection of objects
 // 2. Cloneable -- To make a copy of an existing object via the clone() method on the class object.
 // 3. Serializable -- Pack a web of objects
@@ -237,45 +233,49 @@ package Chapters;
 //     }
 // }
 
-
 // Interfaces can be extended
 interface A {
-     void method1();
+    void method1();
 }
 
 interface B extends A {
-     void method2();
+    void method2();
 }
 
 class MyClass implements B {
-    public  void method1(){
+    public void method1() {
         System.out.println("Method1");
     }
+
     public void method2() {
         System.out.println("Method2");
     }
 }
 
-public class chp6  extends MyClass{
-   public static void main(String[] args) {
-     MyClass obj = new MyClass();
-     obj.method1();
-     obj.method2();
-   }
-    
+public class chp6 extends MyClass {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.method1();
+        obj.method2();
+    }
+
 }
 
-
-
-// Why we go for an interface? What is the usage of the interface? 
+// Why we go for an interface? What is the usage of the interface?
 // It has 2 important applications--
-//  one is that whenever you use an interface it will it may if it includes some
-// members which are declared as a final, static and then a final static public they can be
-// used as a global variable look like and this variable can be shared. So, it is just like a
-// library of different variables that can be shareable from one class to another class.
+// one is that whenever you use an interface it will it may if it includes some
+// members which are declared as a final, static and then a final static public
+// they can be
+// used as a global variable look like and this variable can be shared. So, it
+// is just like a
+// library of different variables that can be shareable from one class to
+// another class.
 
-//  another example; obviously, the great example the most
-// significant example that we can inherit in a multiple sense as you know Java does not
-// support single inheritance, but in an indirect way Java also helps a programmer to have
-// the multiple inheritance implementation. These are the two main usage and one usage
-// also it is there runtime polymorphism; 
+// another example; obviously, the great example the most
+// significant example that we can inherit in a multiple sense as you know Java
+// does not
+// support single inheritance, but in an indirect way Java also helps a
+// programmer to have
+// the multiple inheritance implementation. These are the two main usage and one
+// usage
+// also it is there runtime polymorphism;

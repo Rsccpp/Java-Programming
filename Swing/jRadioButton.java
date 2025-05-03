@@ -25,6 +25,7 @@ public class jRadioButton extends JFrame {
         add(cb2);
 
         setSize(400, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
         setVisible(true);
     }

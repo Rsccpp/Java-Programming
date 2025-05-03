@@ -18,6 +18,7 @@ public class jComboBox extends JFrame {
 
         add(cb);
         setSize(400, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
         setVisible(true);
     }

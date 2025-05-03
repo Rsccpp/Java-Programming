@@ -20,7 +20,7 @@ import java.awt.event.*;
 // tf.setBounds(50, 50, 150, 20);
 
 // JButton b = new JButton("CLick here");
-// b.setBounds(50, 100, 95, 30);
+// b.setBounds(50, 100, 150, 30);
 
 // b.addActionListener(new ActionListener() {
 // public void actionPerformed(ActionEvent e) {
@@ -43,8 +43,8 @@ import java.awt.event.*;
 
 // public class jButton extends JFrame {
 // jButton() {
-// JButton b = new JButton(new ImageIcon("C:\\Users\\rohit\\Java
-// Journey\\Swing\\Electronics"));
+// JButton b = new JButton(new
+// ImageIcon("C:\\Users\\rohit\\JavaJourney\\Swing\\Electronics"));
 // b.setBounds(100, 100, 300, 300);
 // add(b);
 // setSize(500, 500);

@@ -22,6 +22,7 @@ public class jTable extends JFrame {
         JScrollPane sp = new JScrollPane(jt);
         add(sp);
         setSize(400, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
 
